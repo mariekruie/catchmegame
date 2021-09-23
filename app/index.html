@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catch me game</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <div class="screen">
+    <h1>Давай поиграем в игру?</h1>
+    <ul class="btns">
+      <button class="btn" id="play-btn">Давай</button>
+      <button class="btn" id="quit-btn">Нет, спасибо</button>
+    </ul>
+    <h5 class="quit-message" id="quit-message">Жаль...</h5>
+  </div>
+
+  <div class="screen">
+    <h1>Выбери свое любимое животное</h1>
+    <ul class="animals-list">
+
+      <li>
+        <button class="choose-animal-btn">
+          <p>Лев</p>
+          <img src="images/lion.svg" alt="lion">
+        </button>
+      </li>
+      <li>
+        <button class="choose-animal-btn">
+          <p>Пчела</p>
+          <img src="images/bee.svg" alt="bee">
+        </button>
+      </li>
+      <li>
+        <button class="choose-animal-btn">
+          <p>Кит</p>
+          <img src="images/whale.svg" alt="whale">
+        </button>
+      </li>
+      <li>
+        <button class="choose-animal-btn">
+          <p>Собака</p>
+          <img src="images/dog.svg" alt="dog">
+        </button>
+      </li>
+      <li>
+        <button class="choose-animal-btn">
+          <p>Сова</p>
+          <img src="images/owl.svg" alt="owl">
+        </button>
+      </li>
+
+    </ul>
+  </div>
+
+  <div class="screen">
+    <h2>А теперь поймай как можно больше животных за отведенное тебе время..</h2>
+    <button class="btn" id="start-btn">Поехали</button>
+  </div>
+
+  <div class="screen game-container" id="game-container">
+    <h3 class="time" id="time">Время: 01:00</h3>
+    <h3 class="score" id="score">Счет: 0</h3>
+    <button class="btn reset-btn" id="reset-btn">Начать сначала</button>
+    <h5 class="finish-message" id="finish-message"></h5>
+  </div>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
